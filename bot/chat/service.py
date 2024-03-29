@@ -10,6 +10,8 @@ from bot.chat.leads_api import save_lead_data
 
 
 class ChatService:
+    """Service class for operations with ChatGPT Assistant"""
+
     @staticmethod
     async def create_chat_thread() -> str | None:
         """Creates a new chat thread ID"""

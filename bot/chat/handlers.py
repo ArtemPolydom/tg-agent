@@ -9,4 +9,5 @@ router = Router()
 
 @router.message()
 async def on_message(message: Message, redis: Redis):
+    """Handle incoming  from users"""
     await ChatService.handle_message(message, redis)
